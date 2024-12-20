@@ -152,6 +152,13 @@ const Topbar = () => {
             />
           </IconButton>
         </Box>
+        {isSmallScreen && (
+          <IconButton size="small" onClick={logout} aria-haspopup="true">
+            <LogoutIcon
+              sx={{ width: "32px", height: "32px", color: colors.purple[500] }}
+            />
+          </IconButton>
+        )}
       </Box>
       <ResponsiveSidebar
         mode={mode}
